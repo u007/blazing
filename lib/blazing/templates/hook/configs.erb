@@ -1,7 +1,7 @@
 
 if [ -d "../shared/" ] ; then
   echo "------> [blazing] copying configs"
-  copy -rf ../shared/config/* ./config/
+  cp -rf ../shared/config/* ./config/
   ln -s "$PWD/../shared/log" ./log
   ln -s "$PWD/../shared/public/uploads" ./public/uploads
   ln -s "$PWD/../shared/public/system" ./public/system
