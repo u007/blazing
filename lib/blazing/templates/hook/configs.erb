@@ -3,8 +3,8 @@ if [ -d "../shared/" ] ; then
   echo "------> [blazing] copying configs"
   cp -rf ../shared/config/* ./config/
   ln -s "$PWD/../shared/log" ./log
-  ln -s "$PWD/../shared/public/uploads" ./public/uploads
-  ln -s "$PWD/../shared/public/system" ./public/system
-  ln -s "$PWD/../shared/tmp" ./tmp
-  ln -s "$PWD/../shared/vendor/bundle" ./vendor/bundle
+  ln -s "$PWD/../shared/public/uploads" ./public/
+  ln -s "$PWD/../shared/public/system" ./public/
+  ln -s "$PWD/../shared/tmp" ./
+  ln -s "$PWD/../shared/vendor/bundle" ./vendor/
 fi
