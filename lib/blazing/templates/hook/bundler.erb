@@ -1,4 +1,6 @@
+
+#--quiet 
 if [ -f "Gemfile" ] ; then
-  echo "------> [blazing] Bundling gems"
-  bundle --deployment --quiet --without development test
+  echo "------> [blazing] Bundling gems!!"
+  bundle --path vendor/bundle --deployment --without development test james
 fi
