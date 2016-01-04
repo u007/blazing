@@ -1,5 +1,8 @@
 if [ -f "Gemfile" ] ; then
-  echo "------> [blazing] regenerate bins"
+  echo "------> [blazing] deleting bins"
   bundle config --delete bin
-  bundle exec rake rails:update:bin
+  rm -f bin/*
+  # echo "------> [blazing] regenerate bins"
+  # bundle exec rake rails:update:bin
+  # echo "------> [blazing] bins done!"
 fi
