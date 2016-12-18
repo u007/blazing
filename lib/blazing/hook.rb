@@ -20,7 +20,8 @@ module Blazing
     end
 
     def rake_command
-      "#{options_as_vars}bundle exec rake #{@config.rake_task}" if @config.rake_task
+      rvm = "/usr/local/rvm/bin/rvm 2.3.1 do"
+      "#{options_as_vars} #{rvm} bundle exec rake #{@config.rake_task}" if @config.rake_task
     end
 
     private
